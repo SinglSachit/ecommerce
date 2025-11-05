@@ -12,7 +12,8 @@ services:
       - DB_PORT=5432
       - DB_TYPE=postgres
       - DB_PASSWORD=sachita67
-      - DB_USERNAME=ecommerce
+      - DB_USERNAME=postgres
+      - DB_DATABASE=ecommerce
       - JWT_SECRET=secret
       - CLOUDINARY_CLOUD_NAME=dfrb6f1sr
       - CLOUDINARY_API_KEY=123456789012345
