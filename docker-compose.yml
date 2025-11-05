@@ -24,7 +24,7 @@ services:
        - POSTGRES_PASSWORD=sachita67
        - POSTGRES_DB=ecommerce
     ports:
-       - "54323:5432"
+       - "12346:5432"
     volumes:
        - db_data:/var/lib/postgresql/data
 volumes:
