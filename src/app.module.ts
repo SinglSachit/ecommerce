@@ -26,7 +26,7 @@ import config from './config/config';
     username: config().database.username,
     password: config().database.password,
     autoLoadEntities: true,
-    database: config().database.database,
+    database: config().database.databaseName,
     // Disable automatic schema synchronization in environments with existing data
     // to avoid failures when the DB contains rows that violate new constraints.
     synchronize: false,
