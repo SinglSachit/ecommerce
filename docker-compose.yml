@@ -9,7 +9,7 @@ services:
       - "3009:3000"
     environment:
       - DB_PORT=5432
-      - DB_USER=postgres
+      - DB_TYPE=postgres
       - DB_PASSWORD=sachita67
       - DB_NAME=ecommerce
       - JWT_SECRET=secret
