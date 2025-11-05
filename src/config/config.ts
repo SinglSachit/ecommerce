@@ -4,10 +4,9 @@ export default () => ({
       dbType: process.env.DB_TYPE || 'postgres',
       host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT as string) || 5432,
-    username: process.env.DB_USERNAME || 'user',
-    password: process.env.DB_PASSWORD || 'sachita67',
-    databaseName: process.env.DB_DATABASE || 'app_db',
-    name: process.env.DB_NAME || 'ecommerce',
+      username: process.env.DB_USERNAME || 'user',
+      password: process.env.DB_PASSWORD || 'sachita67',
+      databaseName: process.env.DB_DATABASE || 'app_db',
   },
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUD_NAME || 'cloud_name',

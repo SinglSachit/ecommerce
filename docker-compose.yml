@@ -13,17 +13,16 @@ services:
       - DB_TYPE=postgres
       - DB_PASSWORD=sachita67
       - DB_USERNAME=user
-      - DB_DATABASE=app_db
-      - DB_NAME=ecommerce
+      - DB_DATABASE=ecommerce
       - JWT_SECRET=secret
-      - CLOUDINARY_CLOUD_NAME=dfrb6f1sr
-      - CLOUDINARY_API_KEY=123456789012345
-      - CLOUDINARY_API_SECRET=M93Emu5npQ7jhDu5f_Gv-2SpJhY
+      - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}
+      - CLOUDINARY_API_KEY=${CLOUDINARY_API_KEY}
+      - CLOUDINARY_API_SECRET=${CLOUDINARY_API_SECRET}
 
   db:
     image: postgres:15-alpine
     environment:
-       - POSTGRES_USER=user
+       - POSTGRES_USER=postgres
        - POSTGRES_PASSWORD=sachita67
        - POSTGRES_DB=ecommerce
     ports:
