@@ -8,10 +8,11 @@ services:
     ports:
       - "3009:3000"
     environment:
+      - DB_HOST=db
       - DB_PORT=5432
       - DB_TYPE=postgres
       - DB_PASSWORD=sachita67
-      - DB_NAME=ecommerce
+      - DB_USERNAME=ecommerce
       - JWT_SECRET=secret
       - CLOUDINARY_CLOUD_NAME=dfrb6f1sr
       - CLOUDINARY_API_KEY=123456789012345
@@ -26,7 +27,7 @@ services:
     ports:
        - "12346:5432"
     volumes:
-       - db_data:/var/lib/postgresql/data
+       - db_data_dev:/var/lib/postgresql/data
 volumes:
-  db_data:
+  db_data_dev:
     driver: local
